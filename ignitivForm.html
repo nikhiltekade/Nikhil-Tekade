@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacts_Form</title>
+
+    <style>
+       h1{
+        margin: 20px;
+        font-size: 2em;
+        color: black;
+        text-align: center;
+       } 
+     table{
+        margin-left: 500px;
+     }
+     label{
+        margin: 5px;
+        float: left;
+        font-size: 1em;
+
+     }
+     input{
+        border-color: black;
+        width: 600px;
+        height: 40px;
+        color:black;
+     }
+     input:focus{
+        border: 1px solid black;
+     }
+     
+     .btn{
+        border-radius: 7px;
+        border-color: black;
+        width: 110px;
+        background-color: orangered;
+     }
+     .btn:hover{
+        color:black;
+        background-color: red;
+     }
+     body{
+        border-color: black;
+        color: black;
+     }
+     textarea {
+        border-color: black solid 3px;
+        outline: none;
+        color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>We are here to help! Tell us more.</h1>
+    <table>
+        <form action="https://www.ignitiv.com/">
+            <tr><td>
+                <label>First name</label>
+                <br>
+            <input type="text" id="name" value="" required pattern="A-Za-z">
+            </th>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                
+               <label>Last name</label>
+               <br> 
+               <input type="text" id="nme" value="" required pattern="[A-Za-z]">
+           
+           </td>
+         </tr>       
+          <tr>
+            <td>
+                <label>Work email</label>
+                <br>
+                <input type="email" pattern="[A-Za-z0-9@ *]">
+    
+            </td>
+          </tr>      
+        <tr>
+            <td>
+                <label>Phone number</label>
+                <br>
+                <input type="text" id="num" value="" required pattern="[0-9]">
+    
+            </td>
+        </tr>
+    <tr>
+        <td>
+            <label>Message</label>
+            <br>
+            <textarea  name="txt" pattern="[a-z]{1,30}(,[a-z]{1,30})*"   value="" rows="4" cols="80" ></textarea>
+        </td>
+    </tr>
+           <tr>
+            <td>
+                <br>
+               
+                    <input type="submit" value="Submit" class="btn">
+                    <a href="#"></a>
+        
+                    <br>
+                    <br>
+               
+                </div>
+            </td>
+           </tr> 
+        </table>
+    
+        </form>
+</body>
+</html>
